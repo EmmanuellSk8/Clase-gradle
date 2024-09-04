@@ -9,6 +9,9 @@ plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
 
+
+
+
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
@@ -24,6 +27,7 @@ dependencies {
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
+    implementation("org.springframework.boot:spring-boot-starter-web:3.1.4")
     // This dependency is used by the application.
     implementation(libs.guava)
 }
